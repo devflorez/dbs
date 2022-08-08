@@ -1,0 +1,28 @@
+.characterCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  
+  &--character {
+    position: relative;
+    &--image {
+      position: absolute;
+      z-index: 1;
+    }
+    &--background {
+      border-radius: 1rem;
+      background-color: $primary;
+      height: 90%;
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      z-index: 0;
+    }
+  }
+  strong {
+    margin: 0;
+    color: $gray;
+  }
+}
